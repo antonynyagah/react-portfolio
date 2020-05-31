@@ -3,7 +3,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, 
 import UI from '../pictures/s&j.png';
 import Employee from '../pictures/employee.png';
 import Book from '../pictures/booksearch.png';
-
+import Times from '../pictures/lambdatimes.png';
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -56,6 +56,21 @@ class Projects extends Component {
             <CardActions border>
             <Button colored>
               <a href="https://antony-nyagah-book-search.herokuapp.com/" class="button" target="blank">Live Demo</a>
+                </Button>
+            </CardActions>
+          </Card>
+
+          {/* Project 4 */}
+         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <img style= {{height:'176px'}} alt="instagram logo" src={Times} className="avatar-img" />
+
+        <CardTitle style={{fontFamily: 'Anton'}}>Lambda Times</CardTitle>
+            <CardText>
+            Front End React News app that showcases basic filtering and carousel of images!
+            </CardText>
+            <CardActions border>
+            <Button colored>
+              <a href="https://antony-nyagah-lambdatimes.herokuapp.com/" class="button" target="blank">Live Demo</a>
                 </Button>
             </CardActions>
           </Card>
