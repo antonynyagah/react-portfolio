@@ -14,7 +14,7 @@ class Projects extends Component {
 
     if(this.state.activeTab === 0){
       return(
-        <div style={{fontFamily: 'Anton'}} className="projects-grid">
+        <div style={{fontFamily: 'Anton', dsiplay: 'center'}} className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <img style= {{height:'176px'}} alt="instagram logo" src={UI} className="avatar-img" />
@@ -51,7 +51,7 @@ class Projects extends Component {
 
         <CardTitle style={{fontFamily: 'Anton'}}>Book Search</CardTitle>
             <CardText>
-            "Search and learn more about your favorite book!
+            Search and learn more about your favorite book!
             </CardText>
             <CardActions border>
             <Button colored>
@@ -90,11 +90,14 @@ class Projects extends Component {
   render() {
     return(
       <div>
-        <h1 style={{color: 'white', display: 'flex' , fontFamily: 'Anton'}}>Projects</h1>
+        <h1 style={{color: 'white', display: 'center' , fontFamily: 'Anton', textAlign:'center',}}>Projects</h1>
 
 
           <Grid>
             <Cell col={12}>
+              <p style= {{color:'white', display:'center', textAlign: 'center' }}>During my time at lambda school we have completed many coding excerises as well as sprint challenges that assess what we learned along the way. 
+              Here are some projects I've done during the curriculum or my spare time. More robust projects coming soon..</p>
+              <br></br>
               <div className="content">{this.toggleCategories()}</div>
             </Cell>
           </Grid>
