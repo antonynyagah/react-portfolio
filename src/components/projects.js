@@ -4,6 +4,8 @@ import UI from '../pictures/s&j.png';
 import Employee from '../pictures/employee.png';
 import Book from '../pictures/booksearch.png';
 import Times from '../pictures/lambdatimes.png';
+import GameofLife from '../pictures/gameoflife.png';
+
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -28,9 +30,24 @@ class Projects extends Component {
               <a href="https://antony-nyagah-ui-challenge.netlify.com/" class="button" target="blank">Live Demo</a>
                 </Button>
             </CardActions>
+
+          </Card>
+           {/* Project 2 */}
+           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <img style= {{height:'176px'}} alt="instagram logo" src={GameofLife} className="avatar-img" />
+
+        <CardTitle style={{fontFamily: 'Anton'}}>Game of Life</CardTitle>
+            <CardText>
+             Cellular automaton!
+            </CardText>
+            <CardActions border>
+              <Button colored>
+              <a href="https://antony-nyagah-game-of-life.herokuapp.com/" class="button" target="blank">Live Demo</a>
+                </Button>
+            </CardActions>
           </Card>
 
-          {/* Project 2 */}
+          {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <img style= {{height:'176px'}} alt="instagram logo" src={Employee} className="avatar-img" />
 
@@ -45,7 +62,7 @@ class Projects extends Component {
             </CardActions>
           </Card>
 
-         {/* Project 3 */}
+         {/* Project 4 */}
          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <img style= {{height:'176px'}} alt="instagram logo" src={Book} className="avatar-img" />
 
@@ -60,7 +77,7 @@ class Projects extends Component {
             </CardActions>
           </Card>
 
-          {/* Project 4 */}
+          {/* Project 5 */}
          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <img style= {{height:'176px'}} alt="instagram logo" src={Times} className="avatar-img" />
 
